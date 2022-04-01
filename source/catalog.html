@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="./img/logo.png" alt="City of Sedona Logotype" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span>
+            <svg
+              width="23"
+              height="22"
+              viewBox="0 0 23 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+            </svg>
+          </span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item--capital">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item--capital site-list__item--active">
+              <a>Фото и Видео</a>
+            </li>
+            <li class="site-list__item--capital">
+              <a>Форма отзыва</a>
+            </li>
+            <li class="site-list__item--capital">
+              <a>HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro">
+        <div class="intro__wrapper">
+          <img
+            class="intro__background"
+            src="./img/back-mobile.png"
+            alt="Intro background"
+          />
+          <img
+            class="intro__greeting"
+            src="./img/SEDONA.png"
+            alt="Welcome to sedona"
+          />
+          <div class="intro__transition">
+            <!-- Два элемента образующие переход из секции в секцию -->
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__wrapper">
+          <header class="gallery__header">
+            <h1 class="gallery__title--capital gallery--visually-hidden">
+              Фото и Видео
+            </h1>
+            <h2 class="gallery__slogan--capital">Фото и Видео</h2>
+            <p class="gallery__description--capital">
+              Не можете решиться на путешествие из-за курса? Фотографии помогут
+              вам забыть о политике и экономике.
+            </p>
+          </header>
+          <div class="gallery__item post">
+            <img
+              src="./img/gallery/photo-1-mobile.png"
+              alt="Неродные просторы"
+              class="post__media"
+            />
+            <div class="post__footer">
+              <p class="post__description--capital">Неродные просторы</p>
+              <p class="post__author">Автор фото: Борис</p>
+            </div>
+            <div class="post__interaction">
+              <a href="" class="post_like">
+                <span><i class="icon-like">Like</i>1350</span>
+              </a>
+            </div>
+          </div>
+          <div class="gallery__item post">
+            <img
+              src="./img/gallery/photo-2-mobile.png"
+              alt="Местная растительность"
+              class="post__media"
+            />
+            <div class="post__footer">
+              <p class="post__description--capital">Местная растительность</p>
+              <p class="post__author">Автор фото: Сергей</p>
+            </div>
+            <div class="post__interaction">
+              <a href="" class="post_like">
+                <span><i class="icon-like">Like</i>143</span>
+              </a>
+            </div>
+          </div>
+          <div class="gallery__item post">
+            <img
+              src="./img/gallery/photo-3-mobile.png"
+              alt="Дорога на север"
+              class="post__media"
+            />
+            <div class="post__footer">
+              <p class="post__description--capital">Дорога на север</p>
+              <p class="post__author">Автор фото: Петр</p>
+            </div>
+            <div class="post__interaction">
+              <a href="" class="post_like">
+                <span><i class="icon-like">Like</i>96</span>
+              </a>
+            </div>
+          </div>
+          <div class="gallery__item post">
+            <img
+              src="./img/gallery/photo-4-desktop 1.png"
+              alt="Мост дьявола"
+              class="post__media"
+            />
+            <div class="post__footer">
+              <p class="post__description--capital">Мост дьявола</p>
+              <p class="post__author">Автор фото: Антон</p>
+            </div>
+            <div class="post__interaction">
+              <a href="" class="post_like">
+                <span><i class="icon-like">Like</i>254</span>
+              </a>
+            </div>
+          </div>
+          <div class="offer">
+            <h2 class="offer__title--capital">Все еще сомневаетесь?</h2>
+            <p class="offer__description--capital">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не
+              подорожали в очередной раз!
+            </p>
+            <div class="offer__video">
+              <!-- <video src=""></video> -->
+              <img src="./img/gallery/video-mobile.png" alt="Видео" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__visitsedona">
+          <a>#VISITSEDONA</a>
+        </div>
+        <div class="main-footer__socials socials">
+          <span class="socials__vkontakte">
+            <img src="./img/social-vk.png" alt="Вконтакте" />
+          </span>
+          <span class="socials__telegram">
+            <img src="./img/social-telegram.png" alt="Телеграм" />
+          </span>
+          <span class="socials__youtube">
+            <img src="./img/social-youtube.png" alt="YouTube" />
+          </span>
+        </div>
+        <div class="main-footer__author">
+          <b class="main-footer__company-description">РАЗРАБОТАНО</b>
+          <img src="./img/htmlacademy.png" alt="HTML Academy" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
