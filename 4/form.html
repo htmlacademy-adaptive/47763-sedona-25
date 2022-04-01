@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-adaptive.github.io/47763-sedona-25/4/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="./img/logo.png" alt="City of Sedona Logotype" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span>
+            <svg
+              width="23"
+              height="22"
+              viewBox="0 0 23 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+            </svg>
+          </span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item--capital">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item--capital">
+              <a>Фото и Видео</a>
+            </li>
+            <li class="site-list__item--capital site-list__item--active">
+              <a>Форма отзыва</a>
+            </li>
+            <li class="site-list__item--capital">
+              <a>HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro">
+        <div class="intro__wrapper">
+          <img
+            class="intro__background"
+            src="./img/back-mobile.png"
+            alt="Intro background"
+          />
+          <img
+            class="intro__greeting"
+            src="./img/SEDONA.png"
+            alt="Welcome to sedona"
+          />
+          <div class="intro__transition">
+            <!-- Два элемента образующие переход из секции в секцию -->
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <h1 class="feedback__title--capital feedback--visually-hidden">
+          Оставьте свой отзыв
+        </h1>
+        <h2 class="feedback__slogan--capital">Оставьте свой отзыв</h2>
+        <p class="feedback__description--capital">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
+        </p>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru">
+          <fieldset class="feedback-form__user-form">
+            <div class="user-form">
+              <legend class="user-form__title--capital">Представьтесь:</legend>
+              <div class="user-form__name-block">
+                <label class="user-form__name-label--capital" for="name">
+                  Имя*:
+                </label>
+                <input
+                  class="user-form__name-input"
+                  name="name"
+                  value="Пётр"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="user-form__lastname-block">
+                <label
+                  class="user-form__lastname-label--capital"
+                  for="lastname"
+                >
+                  Фамилия*:
+                </label>
+                <input
+                  class="user-form__lastname-input"
+                  name="lastname"
+                  value="Пустота"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="user-form__middlename-block">
+                <label
+                  class="user-form__middlename-label--capital"
+                  for="middlename"
+                >
+                  Отчество:
+                </label>
+                <input
+                  class="user-form__middlename-input"
+                  name="middlename"
+                  value="Викторович"
+                  type="text"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__contacts-form">
+            <div class="contacts-form">
+              <legend class="contacts-form__title--capital">
+                Контактная информация:
+              </legend>
+              <div class="contacts-form__phone-block">
+                <label class="contacts-form__phone-label--capital" for="phone">
+                  Контактный телефон*:
+                </label>
+                <div class="contacts-form__phone-input-group">
+                  <input
+                    class="contacts-form__phone-input"
+                    type="tel"
+                    name="phone"
+                    value=""
+                    placeholder="Введите телефон"
+                    required
+                  />
+                  <span class="icon icon-phone">icon phone</span>
+                </div>
+              </div>
+              <div class="contacts-form__email-block">
+                <label class="contacts-form__email-label--capital" for="email">
+                  Электронная почта*:
+                </label>
+                <div class="contacts-form__email-input-group">
+                  <input
+                    class="contacts-form__email-input"
+                    type="email"
+                    name="email"
+                    value=""
+                    placeholder="Введите e-mail"
+                    required
+                  />
+                  <span class="icon icon-email">icon email</span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__impression-form">
+            <div class="impression-form">
+              <legend class="impression-form__title--capital">
+                Ваше общее впечатление:
+              </legend>
+              <div class="impression-form__radio-group">
+                <input
+                  class="impression-form__radio-input"
+                  type="radio"
+                  name="imp-positive"
+                  checked
+                />
+                <label
+                  class="impression-form__radio-label--bold"
+                  for="imp-positive"
+                >
+                  Скорее положительное
+                </label>
+              </div>
+              <div class="impression-form__radio-group">
+                <input
+                  class="impression-form__radio-input"
+                  type="radio"
+                  name="imp-negative"
+                />
+                <label
+                  class="impression-form__radio-label--bold"
+                  for="imp-negative"
+                >
+                  Скорее отрицательное
+                </label>
+              </div>
+              <div class="impression-form__radio-group">
+                <input
+                  class="impression-form__radio-input"
+                  type="radio"
+                  name="imp-neutral"
+                />
+                <label
+                  class="impression-form__radio-label--bold"
+                  for="imp-neutral"
+                >
+                  Затрудняюсь ответить
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__sight-form">
+            <div class="sight-form">
+              <legend class="sight-form__title--capital">
+                Посещенные достопримечательности:
+              </legend>
+              <div class="sight-form__checkbox-group">
+                <input
+                  class="sight-form__checkbox-input"
+                  type="checkbox"
+                  name="devil-bridge"
+                  checked
+                />
+                <label
+                  class="sight-form__checkbox-label--bold"
+                  for="devil-bridge"
+                >
+                  Мост дьявола
+                </label>
+              </div>
+              <div class="sight-form__checkbox-group">
+                <input
+                  class="shight-form__checkbox-input"
+                  type="checkbox"
+                  name="bell-hill"
+                  checked
+                />
+                <label class="sight-form__checkbox-label--bold" for="bell-hill">
+                  Гора-Колокол
+                </label>
+              </div>
+              <div class="sight-form__checkbox-group">
+                <input
+                  class="shight-form__checkbox-input"
+                  type="checkbox"
+                  name="park"
+                  checked
+                />
+                <label class="sight-form__checkbox-label--bold" for="park">
+                  Слайд-парк
+                </label>
+              </div>
+              <div class="sight-form__checkbox-group">
+                <input
+                  class="shight-form__checkbox-input"
+                  type="checkbox"
+                  name="red-rock"
+                />
+                <label class="sight-form__checkbox-label--bold" for="red-rock">
+                  Красные скалы
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="feedback__message message">
+            <h2 class="message__title--capital">Опишите свои эмоции</h2>
+            <textarea
+              class="message__text"
+              name="feedback-message"
+              rows="10"
+              placeholder="Опишите подробно все свои восторки"
+            ></textarea>
+          </div>
+          <div class="feedback_submit">
+            <button class="button button-primary" type="submit">
+              ОТПРАВИТЬ ОТЗЫВ
+            </button>
+            <span class="help-text--capital">* — обязательные поля</span>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__visitsedona">
+          <a>#VISITSEDONA</a>
+        </div>
+        <div class="main-footer__socials socials">
+          <span class="socials__vkontakte">
+            <img src="./img/social-vk.png" alt="Вконтакте" />
+          </span>
+          <span class="socials__telegram">
+            <img src="./img/social-telegram.png" alt="Телеграм" />
+          </span>
+          <span class="socials__youtube">
+            <img src="./img/social-youtube.png" alt="YouTube" />
+          </span>
+        </div>
+        <div class="main-footer__author">
+          <b class="main-footer__company-description">РАЗРАБОТАНО</b>
+          <img src="./img/htmlacademy.png" alt="HTML Academy" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
