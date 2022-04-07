@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff");
+}
+
 .page {
   background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+}
+
+.page__body {
+  margin: 0;
 }

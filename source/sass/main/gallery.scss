@@ -1,3 +1,42 @@
 .gallery {
-  //
+  background-color: #ffffff;
+}
+
+.gallery__header {
+  padding: 0 20px;
+}
+
+.gallery__title--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gallery__slogan {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.gallery__slogan--capital {
+  text-transform: uppercase;
+}
+
+.gallery__description {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.gallery__description--capital {
+  text-transform: uppercase;
 }

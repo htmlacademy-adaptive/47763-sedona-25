@@ -1,3 +1,39 @@
 .places {
-  //
+  background: #ffffff;
+}
+
+.places__header {
+  padding: 32px 0 32px 0;
+}
+
+.places__title--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.places__slogan {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.places__slogan--capital {
+  text-transform: uppercase;
+}
+
+.places__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.places__description--capital {
+  text-transform: uppercase;
 }

@@ -1,3 +1,42 @@
 .feedback {
-  //
+  background-color: #ffffff;
+}
+
+.feedback__wrapper {
+  padding: 0 36px 20px 24px;
+}
+
+.feedback__title--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feedback__slogan {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.feedback__slogan--capital {
+  text-transform: uppercase;
+}
+
+.feedback__description {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.feedback__description--capital {
+  text-transform: uppercase;
 }

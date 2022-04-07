@@ -1,3 +1,21 @@
 .main-nav {
-  //
+  background-color: #ffffff;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  background-color: #81b3d2;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
 }

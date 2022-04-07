@@ -1,3 +1,24 @@
 .sight-form {
-  //
+  background-color: #ffffff;
+}
+
+.sight-form__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.sight-form__title--capital {
+  text-transform: uppercase;
+}
+
+.sight-form__checkbox-label {
+  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.sight-form__checkbox-label--bold {
+  font-weight: bold;
 }
