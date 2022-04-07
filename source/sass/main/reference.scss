@@ -1,0 +1,25 @@
+.reference {
+  background-color: #ffffff;
+}
+
+.reference__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.reference__title--capital {
+  text-transform: uppercase;
+}
+
+.reference__description {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.reference__description--capital {
+  text-transform: uppercase;
+}

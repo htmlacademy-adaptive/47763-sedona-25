@@ -1,0 +1,52 @@
+.subject {
+  background-color: #eeeeee;
+}
+
+.subject--big {
+  background-color: #81b3d2;
+}
+
+.subject__item {
+  padding: 24px 16px;
+}
+
+.subject__title {
+  color: #333333;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.subject__title--big {
+  color: #ffffff;
+}
+
+.subject__title--capital {
+  text-transform: uppercase;
+}
+
+.subject__number {
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.subject__number--big {
+  color: #ffffff;
+}
+
+.subject__description {
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.subject__description--big {
+  color: #ffffff;
+}
+
+.subject__description--capital {
+  text-transform: uppercase;
+}

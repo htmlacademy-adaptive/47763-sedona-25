@@ -1,0 +1,43 @@
+.post {
+  background-color: #ffffff;
+}
+
+.post__media {
+  padding: 24px 20px 16px;
+}
+
+.post__footer {
+  margin: 0;
+  padding: 0 20px 12px;
+}
+
+.post__description {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 0;
+}
+
+.post__description--capital {
+  text-transform: uppercase;
+}
+
+.post__author {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  margin: 0;
+}
+
+.post__like {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.post__interaction {
+  padding: 0 20px 24px;
+}

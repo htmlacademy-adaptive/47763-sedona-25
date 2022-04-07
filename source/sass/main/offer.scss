@@ -1,0 +1,30 @@
+.offer {
+  background-color: #ffffff;
+}
+
+.offer__wrapper {
+  padding: 0 20px 16px;
+}
+
+.offer__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.offer__title--capital {
+  text-transform: uppercase;
+}
+
+.offer__description {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  padding: 0 0 38px 0;
+}
+
+.offer__description--capital {
+  text-transform: uppercase;
+}

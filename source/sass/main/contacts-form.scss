@@ -1,0 +1,36 @@
+.contacts-form {
+  background-color: #ffffff;
+}
+
+.contacts-form__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.contacts-form__title--capital {
+  text-transform: uppercase;
+}
+
+.contacts-form__phone-label {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.contacts-form__phone-label--capital {
+  text-transform: uppercase;
+}
+
+.contacts-form__email-label {
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.contacts-form__email-label--capital {
+  text-transform: uppercase;
+}
