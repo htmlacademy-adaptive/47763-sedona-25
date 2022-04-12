@@ -108,6 +108,10 @@
     width: 100%;
   }
 
+  .subject--order {
+    flex-direction: row-reverse;
+  }
+
   .subject__item {
     width: 400px;
     height: 256px;

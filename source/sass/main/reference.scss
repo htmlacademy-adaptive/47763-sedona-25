@@ -1,5 +1,13 @@
+@import "../components/variables.scss";
+
 .reference {
   background-color: #ffffff;
+}
+
+.reference__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .reference__title {
@@ -22,4 +30,15 @@
 
 .reference__description--capital {
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .reference__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .reference__item {
+    width: 256px;
+  }
 }
