@@ -271,6 +271,10 @@
     width: 100%;
   }
 
+  .subject--order {
+    flex-direction: row-reverse;
+  }
+
   .subject__item {
     width: 400px;
     height: 256px;
@@ -286,6 +290,12 @@
 }
 .reference {
   background-color: #ffffff;
+}
+
+.reference__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .reference__title {
@@ -310,6 +320,16 @@
   text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .reference__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .reference__item {
+    width: 256px;
+  }
+}
 .hotel-search {
   background-color: #ffffff;
 }
