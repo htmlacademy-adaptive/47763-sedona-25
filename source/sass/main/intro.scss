@@ -1,3 +1,22 @@
+@import "../components/variables.scss";
+
 .intro {
   background: url("../../img/back-mobile.png") no-repeat #a8ccdc;
+  position: relative;
+  background-size: cover;
+  min-height: 214px;
+}
+
+.intro--main {
+  min-height: 389px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-height: 290px;
+  }
+
+  .intro--main {
+    min-height: 518px;
+  }
 }

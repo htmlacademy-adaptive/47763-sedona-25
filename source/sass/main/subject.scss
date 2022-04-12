@@ -1,9 +1,18 @@
+@import "../components/variables.scss";
+
 .subject {
+  display: flex;
+  flex-direction: column;
   background-color: #eeeeee;
+}
+
+.subject--order {
+  flex-direction: column;
 }
 
 .subject--big {
   background-color: #81b3d2;
+  width: 100%;
 }
 
 .subject__item {
@@ -49,4 +58,70 @@
 
 .subject__description--capital {
   text-transform: uppercase;
+}
+
+.subject__image {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: none;
+  background-position: center center;
+}
+
+@media (min-width: $tablet-width) {
+  .subject {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subject--big {
+    background-color: #81b3d2;
+    width: 100%;
+  }
+
+  .subject--order {
+    flex-direction: row-reverse;
+  }
+
+  .subject__item {
+    width: 256px;
+    height: 256px;
+    box-sizing: border-box;
+  }
+
+  .subject__image {
+    width: 512px;
+    height: auto;
+    position: relative;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subject {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subject--big {
+    background-color: #81b3d2;
+    width: 100%;
+  }
+
+  .subject--order {
+    flex-direction: row-reverse;
+  }
+
+  .subject__item {
+    width: 400px;
+    height: 256px;
+    box-sizing: border-box;
+  }
+
+  .subject__image {
+    width: 800px;
+    position: relative;
+    height: auto;
+    margin: 0;
+  }
 }
