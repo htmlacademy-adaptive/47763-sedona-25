@@ -1,9 +1,20 @@
+@import "../components/variables.scss";
+
 .places {
   background: #ffffff;
 }
 
 .places__header {
   padding: 32px 0 32px 0;
+}
+
+.places__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .places__title--visually-hidden {
