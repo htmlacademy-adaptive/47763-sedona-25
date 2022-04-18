@@ -11,6 +11,16 @@
   min-height: 389px;
 }
 
+.intro__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.intro__greeting {
+  width: 282px;
+  margin-top: 90px;
+}
+
 @media (min-width: $tablet-width) {
   .intro {
     min-height: 290px;
@@ -18,5 +28,9 @@
 
   .intro--main {
     min-height: 518px;
+  }
+
+  .intro__greeting {
+    width: 350px;
   }
 }

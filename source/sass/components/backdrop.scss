@@ -1,0 +1,22 @@
+@import "../components/variables.scss";
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 90;
+  display: none;
+}
+
+.backdrop--show {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .backdrop {
+    display: none;
+  }
+}
