@@ -1,3 +1,5 @@
+@import "../components/variables.scss";
+
 .gallery {
   background-color: #ffffff;
 }
@@ -37,6 +39,23 @@
   line-height: 21px;
 }
 
+.gallery__wrapper {
+  display: grid;
+  grid-template-columns: auto;
+}
+
 .gallery__description--capital {
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__item:first-child {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__item:first-child {
+    grid-column: 1 / 4;
+  }
 }
