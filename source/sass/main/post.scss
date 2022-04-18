@@ -1,9 +1,17 @@
+@import "../components/variables.scss";
+@import "../components/button.scss";
+
 .post {
   background-color: #ffffff;
 }
 
 .post__media {
+  box-sizing: border-box;
   padding: 24px 20px 16px;
+  width: 100%;
+  height: 260px;
+  object-fit: none;
+  background-position: center center;
 }
 
 .post__footer {
@@ -40,4 +48,42 @@
 
 .post__interaction {
   padding: 0 20px 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .post__media {
+    padding: 0;
+  }
+
+  .post__footer {
+    background-color: #f2f2f2;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    position: relative;
+  }
+
+  .post__media {
+    padding-top: 0;
+  }
+
+  .post__footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .post__description {
+    color: #ffffff;
+  }
+
+  .post__like {
+    color: #ffffff;
+  }
 }

@@ -1,3 +1,5 @@
+@import "../components/variables.scss";
+
 .sight-form {
   background-color: #ffffff;
 }
@@ -21,4 +23,26 @@
 
 .sight-form__checkbox-label--bold {
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .sight-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sight-form__checkbox-group {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sight-form {
+    justify-content: space-around;
+  }
+
+  .sight-form__checkbox-group {
+    width: auto;
+  }
 }

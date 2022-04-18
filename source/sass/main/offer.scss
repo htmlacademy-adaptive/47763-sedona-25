@@ -1,3 +1,5 @@
+@import "../components/variables.scss";
+
 .offer {
   background-color: #ffffff;
 }
@@ -27,4 +29,21 @@
 
 .offer__description--capital {
   text-transform: uppercase;
+}
+
+.offer__video img {
+  height: 177px;
+  width: 100%;
+  object-fit: none;
+  background-position: center center;
+}
+
+@media (min-width: $tablet-width) {
+  .offer__wrapper {
+    padding: 0;
+  }
+
+  .offer__video img {
+    height: 500px;
+  }
 }

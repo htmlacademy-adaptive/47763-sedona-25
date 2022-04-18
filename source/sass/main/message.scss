@@ -1,5 +1,10 @@
+@import "../components/variables.scss";
+
 .message {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .message__title {
@@ -9,6 +14,16 @@
   line-height: 26px;
 }
 
+.message__text {
+  width: 279px;
+}
+
 .message__title--capital {
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .message__text {
+    width: 648px;
+  }
 }

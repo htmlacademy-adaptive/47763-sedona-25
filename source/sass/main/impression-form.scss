@@ -1,3 +1,5 @@
+@import "../components/variables.scss";
+
 .impression-form {
   background-color: #ffffff;
 }
@@ -21,4 +23,26 @@
 
 .impression-form__radio-label--bold {
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .impression-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .impression-form__radio-group {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .impression-form {
+    justify-content: space-around;
+  }
+
+  .impression-form__radio-group {
+    width: auto;
+  }
 }
