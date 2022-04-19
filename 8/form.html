@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <base href="https://htmlacademy-adaptive.github.io/47763-sedona-25/8/">
+</head>
+  <body class="page__body">
+    <div class="backdrop"></div>
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="./img/logo.png" alt="City of Sedona Logotype" />
+      </a>
+      <button class="main-header__toggle-button" type="button"></button>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--capital" href="./index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--capital" href="./catalog.html">Фото и Видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__logo">
+                <img src="./img/logo.png" alt="City of Sedona Logotype" />
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link--capital" href="./form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--capital" href="htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro">
+        <div class="intro__wrapper">
+          <img
+            class="intro__greeting"
+            src="./img/SEDONA.png"
+            alt="Welcome to sedona"
+          />
+          <div class="intro__transition">
+            <!-- Два элемента образующие переход из секции в секцию -->
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <h1 class="feedback__title feedback__title--capital feedback__title--visually-hidden">
+            Оставьте свой отзыв
+          </h1>
+          <h2 class="feedback__slogan feedback__slogan--capital">Оставьте свой отзыв</h2>
+          <p class="feedback__description feedback__description--capital">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях
+          </p>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru">
+            <div class="feedback-form__container">
+              <fieldset class="feedback-form__user-form user-form">
+                <legend class="user-form__title user-form__title--capital">Представьтесь:</legend>
+                <div class="user-form__name-block">
+                  <label class="user-form__name-label user-form__name-label--capital" for="name">
+                    Имя*:
+                  </label>
+                  <input
+                    class="user-form__name-input"
+                    id="name"
+                    name="name"
+                    value="Пётр"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="user-form__lastname-block">
+                  <label class="user-form__lastname-label user-form__lastname-label--capital" for="lastname">
+                    Фамилия*:
+                  </label>
+                  <input
+                    class="user-form__lastname-input"
+                    id="lastname"
+                    name="lastname"
+                    value="Пустота"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="user-form__middlename-block">
+                  <label
+                    class="user-form__middlename-label user-form__middlename-label--capital"
+                    for="middlename"
+                  >
+                    Отчество:
+                  </label>
+                  <input
+                    class="user-form__middlename-input"
+                    id="middlename"
+                    name="middlename"
+                    value="Викторович"
+                    type="text"
+                  />
+                </div>
+              </fieldset>
+              <fieldset class="feedback-form__contacts-form contacts-form">
+                <legend class="contacts-form__title contacts-form__title--capital">
+                  Контактная информация:
+                </legend>
+                <div class="contacts-form__phone-block">
+                  <label class="contacts-form__phone-label contacts-form__phone-label--capital" for="phone">
+                    Контактный телефон*:
+                  </label>
+                  <div class="contacts-form__phone-input-group">
+                    <input
+                      class="contacts-form__phone-input"
+                      id="phone"
+                      type="tel"
+                      name="phone"
+                      value=""
+                      placeholder="Введите телефон"
+                      required
+                    />
+                    <span class="icon icon-phone">icon phone</span>
+                  </div>
+                </div>
+                <div class="contacts-form__email-block">
+                  <label class="contacts-form__email-label contacts-form__email-label--capital" for="email">
+                    Электронная почта*:
+                  </label>
+                  <div class="contacts-form__email-input-group">
+                    <input
+                      class="contacts-form__email-input"
+                      id="email"
+                      type="email"
+                      name="email"
+                      value=""
+                      placeholder="Введите e-mail"
+                      required
+                    />
+                    <span class="icon icon-email">icon email</span>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <fieldset class="feedback-form__impression-form impression-form">
+              <legend class="impression-form__title impression-form__title--capital">
+                Ваше общее впечатление:
+              </legend>
+              <div class="impression-form__radio-group">
+                <input
+                  class="impression-form__radio-input"
+                  id="imp-positive"
+                  type="radio"
+                  name="imp-positive"
+                  checked
+                />
+                <label
+                  class="impression-form__radio-label impression-form__radio-label--bold"
+                  for="imp-positive"
+                >
+                  Скорее положительное
+                </label>
+              </div>
+              <div class="impression-form__radio-group">
+                <input
+                  class="impression-form__radio-input"
+                  id="imp-negative"
+                  type="radio"
+                  name="imp-negative"
+                />
+                <label
+                  class="impression-form__radio-label impression-form__radio-label--bold"
+                  for="imp-negative"
+                >
+                  Скорее отрицательное
+                </label>
+              </div>
+              <div class="impression-form__radio-group">
+                <input
+                  class="impression-form__radio-input"
+                  id="imp-neutral"
+                  type="radio"
+                  name="imp-neutral"
+                />
+                <label
+                  class="impression-form__radio-label impression-form__radio-label--bold"
+                  for="imp-neutral"
+                >
+                  Затрудняюсь ответить
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="feedback-form__sight-form sight-form">
+              <legend class="sight-form__title sight-form__title--capital">
+                Посещенные достопримечательности:
+              </legend>
+              <div class="sight-form__checkbox-group">
+                <input
+                  class="sight-form__checkbox-input"
+                  id="devil-bridge"
+                  type="checkbox"
+                  name="devil-bridge"
+                  checked
+                />
+                <label
+                  class="sight-form__checkbox-label sight-form__checkbox-label--bold"
+                  for="devil-bridge"
+                >
+                  Мост дьявола
+                </label>
+              </div>
+              <div class="sight-form__checkbox-group">
+                <input
+                  class="sight-form__checkbox-input"
+                  id="bell-hill"
+                  type="checkbox"
+                  name="bell-hill"
+                  checked
+                />
+                <label class="sight-form__checkbox-label sight-form__checkbox-label--bold" for="bell-hill">
+                  Гора-Колокол
+                </label>
+              </div>
+              <div class="sight-form__checkbox-group">
+                <input
+                  class="sight-form__checkbox-input"
+                  id="park"
+                  type="checkbox"
+                  name="park"
+                  checked
+                />
+                <label class="sight-form__checkbox-label sight-form__checkbox-label--bold" for="park">
+                  Слайд-парк
+                </label>
+              </div>
+              <div class="sight-form__checkbox-group">
+                <input
+                  class="sight-form__checkbox-input"
+                  id="red-rock"
+                  type="checkbox"
+                  name="red-rock"
+                />
+                <label class="sight-form__checkbox-label sight-form__checkbox-label--bold" for="red-rock">
+                  Красные скалы
+                </label>
+              </div>
+            </fieldset>
+            <div class="feedback-form__message message">
+              <h2 class="message__title message__title--capital">Опишите свои эмоции</h2>
+              <textarea
+                class="message__text"
+                name="feedback-message"
+                rows="10"
+                placeholder="Опишите подробно все свои восторки"
+              ></textarea>
+            </div>
+            <div class="feedback-form__submit">
+              <button class="button button-primary" type="submit">
+                ОТПРАВИТЬ ОТЗЫВ
+              </button>
+              <span class="help-text help-text--capital">* — обязательные поля</span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__visitsedona">
+          <a>#VISITSEDONA</a>
+        </div>
+        <div class="main-footer__socials socials">
+          <span class="socials__vkontakte">
+            <img src="./img/social-vk.png" alt="Вконтакте" />
+          </span>
+          <span class="socials__telegram">
+            <img src="./img/social-telegram.png" alt="Телеграм" />
+          </span>
+          <span class="socials__youtube">
+            <img src="./img/social-youtube.png" alt="YouTube" />
+          </span>
+        </div>
+        <div class="main-footer__author">
+          <b class="main-footer__company-description">РАЗРАБОТАНО</b>
+          <img src="./img/htmlacademy.png" alt="HTML Academy" />
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>
