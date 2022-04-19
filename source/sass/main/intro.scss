@@ -1,12 +1,13 @@
 @import "../components/variables.scss";
 
 .intro {
-  background-image: url("../../img/back-mobile.png");
+  background-image: url("/img/back-mobile.png");
   background-repeat: no-repeat;
   background-color: #a8ccdc;
   position: relative;
   background-size: cover;
   min-height: 214px;
+  overflow: hidden;
 }
 
 .intro::after {
@@ -17,7 +18,7 @@
   margin-left: -600px;
   width: 1200px;
   height: 57px;
-  background-image: url("../../img/Vector.png");
+  background-image: url("/img/Vector.png");
 }
 
 
