@@ -1,9 +1,15 @@
+@import "../components/variables.scss";
+
 .hotel-search {
   background-color: #ffffff;
 }
 
 .hotel-search__wrapper {
-  padding: 24px 32px;
+  padding: 50px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hotel-search__title {
@@ -22,8 +28,16 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
+  text-align: center;
+  width: 260px;
 }
 
 .hotel-search__description--capital {
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-search__description {
+    width: 435px;
+  }
 }

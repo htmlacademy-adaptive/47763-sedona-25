@@ -24,6 +24,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
 }
 
 .subject__title--big {
@@ -39,6 +40,9 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
 }
 
 .subject__number--big {
@@ -50,6 +54,9 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin: 0 auto;
+  width: 284px;
+  text-align: center;
 }
 
 .subject__description--big {
@@ -83,6 +90,10 @@
     flex-direction: row-reverse;
   }
 
+  .subject__description {
+    width: 190px;
+  }
+
   .subject__item {
     width: 256px;
     height: 256px;
@@ -110,6 +121,10 @@
 
   .subject--order {
     flex-direction: row-reverse;
+  }
+
+  .subject__description {
+    width: 315px;
   }
 
   .subject__item {

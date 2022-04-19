@@ -1,11 +1,25 @@
 @import "../components/variables.scss";
 
 .intro {
-  background: url("../../img/back-mobile.png") no-repeat #a8ccdc;
+  background-image: url("../../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-color: #a8ccdc;
   position: relative;
   background-size: cover;
   min-height: 214px;
 }
+
+.intro::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../../img/Vector.png");
+}
+
 
 .intro--main {
   min-height: 389px;
