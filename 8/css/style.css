@@ -226,7 +226,7 @@
 
 .intro {
   background-color: #a8ccdc;
-  background-image: url("./img/back-mobile.png");
+  background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -242,7 +242,7 @@
   margin-left: -600px;
   width: 1200px;
   height: 57px;
-  background-image: url("img/Vector.png");
+  background-image: url("../img/vector.png");
 }
 
 .intro--main {
@@ -988,6 +988,7 @@
 }
 
 .post__media {
+  display: block;
   box-sizing: border-box;
   padding: 24px 20px 16px;
   width: 100%;
