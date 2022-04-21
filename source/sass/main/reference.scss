@@ -4,17 +4,31 @@
   background-color: #ffffff;
 }
 
+.reference__wrapper {
+  margin: 24px 20px;
+}
+
 .reference__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.reference__item {
+  display: flex;
+}
+
+.reference__picture {
+  width: 55px;
+  height: auto;
+  margin: 14px 8px 26px 8px;
+}
+
 .reference__title {
   color: #000000;
   font-size: 18px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 24px;
 }
 
 .reference__title--capital {
@@ -40,5 +54,15 @@
 
   .reference__item {
     width: 256px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .reference__picture {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 120px;
   }
 }

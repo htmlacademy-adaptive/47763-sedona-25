@@ -6,6 +6,7 @@
 
 .main-footer__wrapper {
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 32px 16px;
 }
@@ -15,6 +16,13 @@
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.main-footer__author {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
 .main-footer__company-description {
@@ -22,6 +30,7 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
+  margin: auto 8px;
 }
 
 @media (min-width: $tablet-width) {

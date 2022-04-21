@@ -5,16 +5,17 @@
 }
 
 .places__header {
-  padding: 32px 0 32px 0;
+  position: relative;
+  padding: 32px 20px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .places__wrapper {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
 }
 
 .places__title--visually-hidden {
@@ -34,6 +35,8 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+  width: 282px;
+  margin: 0 auto 35px;
 }
 
 .places__slogan--capital {
@@ -43,8 +46,25 @@
 .places__description {
   font-size: 14px;
   line-height: 21px;
+  width: 282px;
+  margin: 0 auto;
 }
 
 .places__description--capital {
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .places__wrapper {
+    flex-direction: row;
+  }
+
+  .places__slogan {
+    width: 520px;
+  }
+
+  .places__description {
+    width: 520px;
+    margin-bottom: 55px;
+  }
 }

@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
+  margin: 0;
+  padding: 0 24px 0 24px;
 }
 
 .subject--order {
@@ -13,10 +15,16 @@
 .subject--big {
   background-color: #81b3d2;
   width: 100%;
+  padding: 0;
+}
+
+.subject--big .subject__item {
+  border: none;
 }
 
 .subject__item {
   padding: 24px 16px;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .subject__title {
@@ -24,6 +32,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
 }
 
 .subject__title--big {
@@ -39,6 +48,9 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
 }
 
 .subject__number--big {
@@ -50,6 +62,9 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin: 0 auto;
+  width: 284px;
+  text-align: center;
 }
 
 .subject__description--big {
@@ -63,7 +78,7 @@
 .subject__image {
   display: block;
   width: 100%;
-  height: 260px;
+  height: 256px;
   object-fit: none;
   background-position: center center;
 }
@@ -72,6 +87,7 @@
   .subject {
     display: flex;
     flex-direction: row;
+    padding: 0;
   }
 
   .subject--big {
@@ -83,10 +99,22 @@
     flex-direction: row-reverse;
   }
 
+  .subject__title {
+    width: 140px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .subject__description {
+    width: 190px;
+  }
+
   .subject__item {
     width: 256px;
     height: 256px;
     box-sizing: border-box;
+    margin: 0;
+    border: none;
   }
 
   .subject__image {
@@ -110,6 +138,10 @@
 
   .subject--order {
     flex-direction: row-reverse;
+  }
+
+  .subject__description {
+    width: 315px;
   }
 
   .subject__item {

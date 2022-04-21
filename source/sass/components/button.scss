@@ -1,3 +1,40 @@
+@import "../components/variables.scss";
+
 .button {
   background-color: #ffffff;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 16px 36px;
+  cursor: pointer;
+  font-family: "PT Sans", sans-serif;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button-icon {
+  background-color: #ffffff;
+}
+
+.button-primary {
+  color: #ffffff;
+  background-color: #81b3d2;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 16px 136px;
+  }
 }

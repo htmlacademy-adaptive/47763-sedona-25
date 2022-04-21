@@ -6,6 +6,7 @@
 }
 
 .post__media {
+  display: block;
   box-sizing: border-box;
   padding: 24px 20px 16px;
   width: 100%;
@@ -77,6 +78,10 @@
     width: 100%;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .post__author {
+    color: #ffffff;
   }
 
   .post__description {
